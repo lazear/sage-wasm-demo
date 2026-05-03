@@ -56,14 +56,36 @@
     <main class="app-shell mx-auto flex w-full max-w-6xl flex-col gap-6 p-4 md:p-6">
       <header class="flex flex-wrap items-center justify-between gap-2">
         <h1 class="text-2xl font-semibold tracking-tight md:text-3xl">Sage WASM Search Demo</h1>
-        <button
-          id="themeToggle"
-          class="inline-flex h-9 items-center rounded-md border border-input bg-background px-3 py-2 text-xs font-medium text-foreground transition hover:bg-muted/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          type="button"
-          aria-label="Toggle color theme"
-        >
-          Theme: Dark
-        </button>
+        <div class="flex items-center gap-2">
+          <a
+            href="https://github.com/lazear/sage-wasm-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open repository on GitHub"
+            class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-foreground transition hover:bg-muted/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            title="View repository on GitHub"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="h-5 w-5"
+            >
+              <path
+                d="M12 0.297C5.372 0.297 0 5.669 0 12.297c0 5.292 3.438 9.792 8.205 11.387.6.112.82-.26.82-.577 0-.285-.012-1.04-.018-2.042-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.083-.729.083-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.833 2.809 1.304 3.495.997.108-.775.419-1.304.763-1.604-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.381 1.236-3.221-.124-.302-.536-1.52.117-3.167 0 0 1.008-.322 3.301 1.23a11.46 11.46 0 0 1 3.004-.404c1.02.005 2.048.138 3.004.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.646.243 2.864.12 3.167.77.84 1.236 1.911 1.236 3.221 0 4.61-2.807 5.628-5.479 5.922.431.37.815 1.101.815 2.222 0 1.604-.015 2.897-.015 3.293 0 .32.216.694.825.577C20.565 22.086 24 17.586 24 12.294 24 5.669 18.627 0.297 12 0.297z"
+              />
+            </svg>
+          </a>
+          <button
+            id="themeToggle"
+            class="inline-flex h-9 items-center rounded-md border border-input bg-background px-3 py-2 text-xs font-medium text-foreground transition hover:bg-muted/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            type="button"
+            aria-label="Toggle color theme"
+          >
+            Theme: Dark
+          </button>
+        </div>
       </header>
       <p class="text-sm text-muted-foreground">
           Loads a FASTA and a set of spectra directly in the browser, builds a local <strong>sage-core</strong>
